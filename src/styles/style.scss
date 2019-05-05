@@ -1,0 +1,22 @@
+@import 'variable.scss';
+@import 'global.scss';
+@import 'font.scss';
+@import '~normalize.css/normalize.css';
+
+html, body {
+  font-family: $font-family;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+a {
+  color: #a5a0d1;
+  text-decoration: none;
+}

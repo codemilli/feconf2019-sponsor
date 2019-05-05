@@ -1,0 +1,72 @@
+@import 'src/styles/variable';
+@import 'src/styles/mixin';
+
+.SponsorInfo, .Benefit {
+  position: relative;
+  padding: 60px 96px;
+  .Title {
+    padding: 24px 0;
+    font-size: 112px;
+    text-align: center;
+  }
+  .Underbar {
+    margin: 20px auto;
+    width: 420px;
+    height: 5px;
+    background: #000;
+  }
+  .Desc {
+    padding: 24px 0;
+    margin-bottom: 48px;
+    font-size: 21px;
+    text-align: center;
+  }
+  .InfoWrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    .Info {
+      padding: 24px 0;
+      opacity: 1;
+      transform: translateY(0px);
+      transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+      transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      h2 {
+        font-size: 52px;
+        margin-bottom: 24px;
+      }
+      p {
+        padding: 24px 0;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      &:nth-child(odd) {
+        align-self: flex-start;
+        text-align: left;
+      }
+      &:nth-child(even) {
+        align-self: flex-end;
+        text-align: right;
+      }
+      &:nth-child(3) {
+        align-self: center;
+      }
+    }
+  }
+}
+
+.Benefit {
+  .Underbar {
+    width: 280px;
+  }
+  .InfoWrap {
+    max-width: 760px;
+    .Info {
+      padding: 12px 0;
+      &:nth-child(3) {
+        align-self: center;
+      }
+    }
+  }
+}

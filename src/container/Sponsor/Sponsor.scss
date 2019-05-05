@@ -1,0 +1,21 @@
+@import 'src/styles/mixin';
+
+$first-bg: black;
+$first-color: white;
+$after-bg: white;
+$after-color: black;
+
+.Sponsor {
+  position: relative;
+  padding-top: 100vh;
+  @include mobile {
+    padding: 36px 24px;
+  }
+}
+
+:global {
+  .contents {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+}
